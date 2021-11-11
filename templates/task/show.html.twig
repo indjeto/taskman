@@ -12,11 +12,11 @@
                 <td>{{ task.description }}</td>
             </tr>
             <tr>
-                <th>CreatedAt</th>
+                <th>Created</th>
                 <td>{{ task.createdAt ? task.createdAt|date('Y-m-d H:i') : '' }}</td>
             </tr>
             <tr>
-                <th>IsDone</th>
+                <th>Done</th>
                 <td>{{ task.isDone ? 'Yes' : 'No' }}{{ task.doneAt ? ' (' ~ task.doneAt|date('Y-m-d H:i') ~ ')' : '' }}</td>
             </tr>
         </tbody>
