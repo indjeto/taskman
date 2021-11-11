@@ -16,11 +16,15 @@ Every user sees all the tasks, but can edit/delete/mark as done only his own tas
    git clone https://github.com/indjeto/taskman.git
    cd taskman
    ```
-2. Run migrations
+2. Install packages
+   ```sh
+   composer install
+   ```
+3. Run migrations
    ```sh
    php bin/console doctrine:migrations:migrate
    ```
-2. Run the app
+4. Run the app
    ```sh
    symfony serve
    ```
@@ -28,4 +32,4 @@ Every user sees all the tasks, but can edit/delete/mark as done only his own tas
 ### To Do
 
 1. Docker integration
-2. Api for frontend guys to make the UI
+2. Json api for frontend guys to make the UI
