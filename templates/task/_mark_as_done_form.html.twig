@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('task_mark_as_done', {'id': task.id}) }}">
+    <input type="hidden" name="_token" value="{{ csrf_token('markAsDone' ~ task.id) }}">
+    <button class="btn">Mark As Done</button>
+</form>
